@@ -1,0 +1,12 @@
+@mixin multiLineEllipsis($lineHeight: 1.2em, $lines-to-show: 4, $font-size: 16px){
+	display: block; 
+	display: -webkit-box;
+	height: $font-size*$line-height*$lines-to-show;
+	font-size: $font-size;
+	line-height: $line-height;
+	-webkit-line-clamp: $lines-to-show;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
